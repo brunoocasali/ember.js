@@ -24,7 +24,7 @@
   import Controller from '@ember/controller';
   import { tracked } from '@glimmer/tracking';
 
-  export default class extends Controller {
+  export default class ApplicationController extends Controller {
     @tracked isMarketOpen = 'live-updating-chart'
 
     get infographicComponentName() {
@@ -68,7 +68,7 @@
   import { computed } from '@ember/object';
   import { tracked } from '@glimmer/tracking';
 
-  export default class extends Controller {
+  export default class ApplicationController extends Controller {
     @tracked isMarketOpen = 'live-updating-chart'
 
     get lastUpdateTimestamp() {
